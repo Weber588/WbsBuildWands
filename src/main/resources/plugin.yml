@@ -1,0 +1,12 @@
+main: wbs.buildwands.WbsBuildWands
+name: WbsBuildWands
+version: 0.0.1
+api-version: 1.14
+author: Weber588
+description: Survival friendly build wands
+depend: [WbsUtils]
+commands:
+  buildwand:
+    aliases:
+      - buildwands
+      - bw

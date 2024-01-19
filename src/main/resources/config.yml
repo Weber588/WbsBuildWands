@@ -1,0 +1,35 @@
+# This will appear before many messages from the plugin.
+message-prefix: '&8[&5BuildWands&8]'
+
+# Use a minecraft colour code here to pick the message colour
+message-colour: '7'
+
+# The highlight colour (to complement the above colour)
+highlight-colour: 'b'
+
+# Errors will be this colour.
+error-colour: 'c'
+
+# Error highlights
+error-highlight: '7'
+
+wands:
+  tier1:
+    item: WOODEN_SHOVEL
+    # The name of the item to be considered a wand. Updates based on this template when the wand is updated,
+    # such as changing the shape it's using.
+    # Available placeholders:
+    #   %shape% - the current shape of the wand
+    #   %radius% - the current radius of the wand
+    display-name: '&6&l%shape% Wand'
+    # The shapes that can be toggled between on this wand.
+    # The first entry here will be the default.
+    allowed-shapes:
+      - LINE:3 # This allows the wand to place with a radius of 3 when in LINE mode, for a total line of length 7
+      - DISC:2
+      - SQUARE:2
+    lore:
+      - '&rRadius: &h%radius%'
+    shiny: true
+    use-durability: true
+    durability-per-block: 1
